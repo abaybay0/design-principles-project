@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/design-svg.svg" />
+    <link href="/styles.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Microsoft UI/UX Design Principles Project</title>
+  </head>
+  <body>
+    <header>
+      <h1>Alex Styles</h1>
+    </header>
+    <nav>
+      <ul>
+    <ul>
+    <li><a href="#about" title="Learn more about me">About</a></li>
+    <li><a href="#portfolio" title="View my projects">Portfolio</a></li>
+    <li><a href="#contact" title="Get in touch">Contact</a></li>
+  </ul>
+      </ul>
+    </nav>
+    <main>
+      <!-- Hero image -->
+      <section class="hero-image">
+            <img
+          src="./images/code_img.jpg"
+          alt="Picture of code on a computer screen"
+             />
+      </section>
+      <!-- About section -->
+      <section id="about" aria-labelledby="about-heading">
+        <h1>About Me</h1>
+        <h2>
+          Hi, I’m Alex Styles — a passionate front-end developer with a keen eye
+          for clean design and intuitive user experiences. I specialize in
+          crafting modern, responsive websites that blend creativity with
+          functionality. My portfolio showcases recent projects that reflect my
+          dedication to thoughtful design and efficient code. Whether you're
+          here to explore my work or get in touch, I’m excited to connect and
+          collaborate.
+        </h2>
+      </section>
+
+      <!-- Portfolio section -->
+      <section id="portfolio" aria-labelledby="portfolio-heading">
+        <h1>My Portfolio</h1>
+        <h2>Check out my recent projects</h2>
+        <ul class="portfolio-list">
+          <li>
+                    <img class="portfolio-image"
+          src="./images/ss1.jpg"
+          alt="Project 1 thumbnail"
+        />
+          <a href="#" class="open-modal"
+   data-title="Project 1: Themetrust Redesign"
+   data-description="A full redesign of Themetrust’s homepage, focusing on accessibility, responsive layout, and brand alignment.">
+   Project 1: Themetrust Website Redesign
+</a>
+          </li>
+          <li>
+                    <img class="portfolio-image"
+          src="./images/ss2.jpg"
+          alt="Project 2 thumbnail"
+        />
+                     <a href="#" class="open-modal"
+   data-title="Project 2: Frontend design for a website screenshot service"
+   data-description=" This project showcases a modern, responsive wesite for a screenshot service built with
+        HTML, CSS, and JavaScript. It features smooth animations, a clean
+        layout, and accessibility best practices. I designed it to reflect a
+        strong personal brand and intuitive user experience.">
+   Project 2: Screenshot Service
+</a>
+          </li>
+          <li>
+                         <img class="portfolio-image"
+          src="./images/ss3.jpg"
+          alt="Project 3 thumbnail"
+        />
+                              <a href="#" class="open-modal"
+   data-title="Project 3: Sketchdock Application"
+   data-description="  This project showcases a modern, responsive wesite for a screenshot service built with
+        HTML, CSS, and JavaScript. It features smooth animations, a clean
+        layout, and accessibility best practices. I designed it to reflect a
+        strong personal brand and intuitive user experience.">
+   Project 3: Sketchdock
+</a>
+          </li>
+                 <li>
+                                 <img class="portfolio-image"
+          src="./images/ss4.jpg"
+          alt="Project 4 thumbnail"
+        />
+          <a href="#" class="open-modal"
+   data-title="Project 4: Page2Images"
+   data-description="This project showcases a modern, responsive wesite for a screenshot service built with
+        HTML, CSS, and JavaScript. It features smooth animations, a clean
+        layout, and accessibility best practices. I designed it to reflect a
+        strong personal brand and intuitive user experience.">
+   Project 4: Page2Images
+</a>
+          </li>
+          <li>
+                          <img class="portfolio-image"
+          src="./images/ss5.jpg"
+          alt="Project 5 thumbnail"
+        />
+          <a href="#" class="open-modal"
+   data-title="Project 5: Creative How To section for OSX Daily website"
+   data-description="This project showcases a modern, responsive How To section for the OXS Daily website that explains how to use inline replies for Mac built with
+        HTML, CSS, and JavaScript. It features smooth animations, a clean
+        layout, and accessibility best practices. I designed it to reflect a
+        strong personal brand and intuitive user experience.">
+   Project 5: OSX Daily
+</a>
+          </li>
+          <li>
+                         <img class="portfolio-image"
+          src="./images/ss6.jpg"
+          alt="Project 6 thumbnail"
+        />
+          <a href="#" class="open-modal"
+   data-title="Project 6: Creative How To section for OSX Daily website"
+   data-description="This project showcases a modern, responsive How To section for the OXS Daily website that explains how to adjust portrait mode blur built with
+        HTML, CSS, and JavaScript. It features smooth animations, a clean
+        layout, and accessibility best practices. I designed it to reflect a
+        strong personal brand and intuitive user experience.">
+   Project 6: OSX Daily
+</a>
+          </li>
+      </section>
+
+      <!-- Contact section -->
+      <section id="contact" aria-labelledby="contact-heading">
+        <h1>Contact Me</h1>
+        <h2>Fill out the form below and I will respond within 24 hours.</h2>
+        <form>
+        
+          <label for="name">Name: </label>
+          <input
+            type="name"
+            id="name"
+            name="name"
+            aria-describedby="name-error"
+            required
+          />
+          <label for="email">Email: </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            aria-describedby="email-error"
+            required
+          />
+               <label for="phone">Phone: </label>
+          <input
+            type="phone"
+            id="phone"
+            name="phone"
+            aria-describedby="phone-error"
+          />
+          <label for="message">Message: </label>
+          <textarea
+            type="message"
+            id="message"
+            name="message"
+            lines="4"
+            aria-describedby="message-error"
+            required></textarea>
+          <button type="submit">Submit</button>
+          
+        </form>
+      </section>
+
+    </main>
+    <footer>
+      <p>2025 Alex Styles Portfolio Project</p>
+    </footer>
+<!-- Modal -->
+<div id="project-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <!-- added modal image -->
+    <img id="modal-image" alt="" style="max-width:100%;height:auto;display:block;margin-bottom:1rem;" />
+    <h2 id="modal-title">Project Title</h2>
+    <p id="modal-description">Detailed project description goes here.</p>
+  </div>
+</div>
+    <script>
+  const modal = document.getElementById("project-modal");
+  const modalImage = document.getElementById("modal-image");
+  const modalTitle = document.getElementById("modal-title");
+  const modalDescription = document.getElementById("modal-description");
+  const closeButton = document.querySelector(".close-button");
+
+  // Example trigger (you can add more)
+  document.querySelectorAll(".portfolio-list a").forEach(link => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      // find the thumbnail image in the same list item
+      const li = this.closest("li");
+      const thumb = li ? li.querySelector("img") : null;
+
+      if (thumb) {
+        modalImage.src = thumb.src;
+        modalImage.alt = thumb.alt || this.textContent || "Project image";
+        modalImage.style.display = ""; // ensure visible if previously hidden
+      } else {
+         // hide image element if no thumbnail found
+        modalImage.src = "";
+        modalImage.alt = "";
+        modalImage.style.display = "none";
+      }
+
+      modalTitle.textContent = this.textContent;
+      modalDescription.textContent = "This is a detailed description of " + this.textContent + ". This project showcases a modern, responsive site built with HTML, CSS, and JavaScript. It features smooth animations, a clean layout, and accessibility best practices. I designed it to reflect a strong personal brand and intuitive user experience.";
+      modal.style.display = "block";
+    });
+  });
+
+  closeButton.onclick = () => {
+    modal.style.display = "none";
+    // clear image to avoid stale content
+    modalImage.src = "";
+    modalImage.alt = "";
+  };
+
+  window.onclick = e => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+      modalImage.src = "";
+      modalImage.alt = "";
+    }
+  };
+</script>
+  </body>
+</html>
