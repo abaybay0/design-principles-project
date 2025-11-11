@@ -303,6 +303,7 @@ a:hover {
 /* Modal Content */
 .modal-content {
   background-color: var(--background-light);
+  color: var(--secondary-color);
   margin: 10% auto;
   padding: 2rem;
   border-radius: 8px;
